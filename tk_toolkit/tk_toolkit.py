@@ -24,3 +24,15 @@ class Webcam:
         self.label.configure(image=imgtk)
         
         self.label.after(20, self.show_frames) # Repeat after an interval to capture continiously
+
+class menuMaker:
+    def __init__(self, root, buttonList, x, y):
+        
+        self.buttonList = buttonList
+        self.root = root
+        self.x = x
+        self.y = y
+        
+        for buttonItem in buttonList:
+            button = Button(self.root, text=buttonItem[0], command=lambda: [buttonItem[1](buttonItem[2])], width=x, height=y,pady=10, padx=10)
+            button.pack(pady=10, padx=10)
