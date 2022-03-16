@@ -34,6 +34,7 @@ class menuMaker:
         self.x = x
         self.y = y
         
-        for i in range(len(buttonList)):
-            button = Button(self.root, text=buttonList[i][0], command=lambda i=i : [buttonList[i][1](buttonList[i][2])], width=x, height=y,pady=10, padx=10)
+        for buttonItem in buttonList:
+            button = Button(self.root, text=buttonItem[0], command=lambda: [buttonItem[1](buttonItem[2])], width=x, height=y,pady=10, padx=10)
             button.pack(pady=10, padx=10)
+
