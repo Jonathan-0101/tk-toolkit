@@ -25,7 +25,7 @@ class Webcam:
         
         self.label.after(20, self.show_frames) # Repeat after an interval to capture continiously
 
-class menuMaker:
+class Menu:
     def __init__(self, root, buttonList, x, y):
         
         self.buttonList = buttonList
