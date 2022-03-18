@@ -7,7 +7,7 @@
 Tool kit with various functionalities for tkinter
 
 Install with
-```python
+```bash
 pip install tk-toolkit
 ```
 
