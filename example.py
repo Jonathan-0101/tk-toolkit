@@ -7,7 +7,7 @@ window.title("Example") # Titles GUI
 window.geometry("1000x1000") # Sizes GUI
 
 # Webcam object
-video = tk_toolkit.Webcam(window, 450, 450, camera=1) # Uses Box class from webcam to create video window
+video = tk_toolkit.Webcam(window, 450, 450, camera=1) # Uses Box class from webcam to create video window, if no camera is specified default is used
 video.show_frames() # Show the created Box
 
 # Menu object
