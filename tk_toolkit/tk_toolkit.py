@@ -4,13 +4,12 @@ import cv2
 from PIL import Image, ImageTk
 
 class Webcam:
-    def __init__(self, window, width, height):
+    def __init__(self, window, width, height, camera=0):
         self.window = window
         self.width = width
         self.height = height
-        
         self.label = Label(self.window, width=self.width, height=self.height)
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(camera)
         self.label.pack()
 
     def show_frames(self): # Define function to show frame
