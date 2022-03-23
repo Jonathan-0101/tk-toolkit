@@ -1,0 +1,10 @@
+name: 'First interaction'
+description: 'Greet new contributors when they create their first issue or open their first pull request'
+author: 'GitHub'
+inputs:
+  repo-token: ${{ secrets.GITHUB_TOKEN }}
+  issue-message: 'Thanks for raising the issue, we will take a look soon'
+  pr-message: 'Hi there, thanks for submitting the PR, we are looking forward to review your contribution'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
