@@ -23,10 +23,10 @@ parameter1 = "parameter1"
 parameter2 = "parameter2"
 
 # Putting the parameters of the function into a tupple
-parameter_list_2 = (parameter1, parameter2)
+input_list_1 = (parameter1, parameter2)
 
 # Creating a 2D array for the buttons, with the text for button, function and the parameters
-buttonList = [["Button 1", function1, parameter_list_2]]
+buttonList = [["Button 1", function1, input_list_1]]
 
 # Calling the function, passing through the tkinter window and button list
 tk_toolkit.Menu(window, buttonList, 7, 1)
